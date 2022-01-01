@@ -1,9 +1,12 @@
 const Home = () => {
 
-    const handleClick = () => {
+    const handleClick = () => { // Click Event
 
         console.log('Hello React');
+    }
+    const handleClickAgain = (name) => { // Click Event
 
+            console.log('Hello ' + name); 
     }
 
     return (  
@@ -11,7 +14,8 @@ const Home = () => {
         <div className="home">
 
         <h2>HomePage</h2>
-        <button onClick ={handleClick}>Click Me</button>
+        <button onClick ={handleClick}>Click Me</button> // Handle Click function invoke
+        <button onClick ={()=> handleClickAgain('Sahan')}>Click Me Again</button> // Handle Click again function invoke
 
         </div>
 
