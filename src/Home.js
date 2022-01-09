@@ -35,8 +35,8 @@ const Home = () => {
         <br/>
       <button onClick ={(e)=> handleClickAgain('Sahan', e)}>Click Me Again</button> {/* Handle Click again function invoke */ } 
         <br/>
-        
-        <BlogList blogs={blog}/>
+        <br/>
+        <BlogList blogs={blog} title = "All Blogs"/>
 
 
         </div>
